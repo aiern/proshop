@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
+// import products from './products'
 
 function App() {
 
@@ -14,9 +15,7 @@ function App() {
       <main className='py-3'>
         <Container>
           <Route path='/' component={HomeScreen} exact />
-          <Route path='/product:id' component={ProductScreen} />
-          {/* <h1>       Welcome to ProShop     </h1> */}
-          {/* <HomeScreen /> */}
+          <Route path='/product/:id' component={ProductScreen} />
         </Container>
       </main>
       <Footer />
