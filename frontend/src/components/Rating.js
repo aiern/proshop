@@ -74,3 +74,4 @@ Rating.propTypes = {
 }
 
 export default Rating
+// module.exports = Rating
