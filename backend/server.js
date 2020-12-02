@@ -1,10 +1,14 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import connectDB from './config/db.js'
+import colors from 'colors'
 import products from './data/products.js'
 // console.log(products[1])
 // console.log(products[1])
 
 dotenv.config()
+connectDB()
+
 const app = express()
 
 app.get('/', (req, res) => {
